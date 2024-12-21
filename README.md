@@ -43,12 +43,30 @@ foreach ($n in $USER_FIRST_LAST_LIST) {
                -PasswordNeverExpires $true `
                -Path "ou=_USERS,$(([ADSI]`"").distinguishedName)" `
                -Enabled $true
-}` ``` `
+}
+```
+
 
 ### Step 3: Optimize and Execute the Script
 1. **Set Execution Policy**:  
    Run the following command in PowerShell to allow the script to execute:  
-   ```powershell
-   Set-ExecutionPolicy Unrestricted
-2
 
+   Set-ExecutionPolicy Unrestricted
+
+2. Navigate to the Script Folder:
+For example: cd C:\Users\YourUsername\Desktop\AD_PS-master
+3.Edit the names.txt File:
+Add names (e.g., Jason Bourne) to the names.txt file. Each line should contain a first and last name. Example content for names.txt:
+Jason Bourne
+
+4.Click the play button in PowerShell ISE or execute the script
+### Test User Accounts
+
+1. Usernames are generated using the first letter of the first name and the full last name.
+Example:
+
+Input: Jason Bourne
+Generated Username: jbourne
+Password: Password1
+
+2. Log in with the newly created account to test if it works in the Active Directory domain. Verify both login and password functionality.
