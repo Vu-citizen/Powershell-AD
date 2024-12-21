@@ -44,7 +44,7 @@ foreach ($n in $USER_FIRST_LAST_LIST) {
                -Path "ou=_USERS,$(([ADSI]`"").distinguishedName)" `
                -Enabled $true
 }
-
+});
 ### Step 3: Optimize and Execute the Script
 1. **Set Execution Policy**:  
    Run the following command in PowerShell to allow the script to execute:  
