@@ -55,7 +55,8 @@ foreach ($n in $USER_FIRST_LAST_LIST) {
 
 2. Navigate to the Script Folder:
 For example: cd C:\Users\YourUsername\Desktop\AD_PS-master
-3.Edit the names.txt File:
+3. Edit the names.txt File:
+   
 Add names (e.g., Jason Bourne) to the names.txt file. Each line should contain a first and last name. Example content for names.txt:
 Jason Bourne
 
