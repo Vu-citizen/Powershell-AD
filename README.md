@@ -57,8 +57,8 @@ foreach ($n in $USER_FIRST_LAST_LIST) {
 For example: cd C:\Users\YourUsername\Desktop\AD_PS-master
 3. Edit the names.txt File:
    
-Add names (e.g., Jason Bourne) to the names.txt file. Each line should contain a first and last name. Example content for names.txt:
-Jason Bourne
+Add names (e.g., Jason Bourne) to the names.txt file. Each line should contain a first and last name. In my example for names.txt:
+is Jason Bourne
 
 4.Click the play button in PowerShell ISE or execute the script
 ### Test User Accounts
