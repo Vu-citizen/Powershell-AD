@@ -45,7 +45,9 @@ foreach ($n in $USER_FIRST_LAST_LIST) {
                -Enabled $true
 }
 
-
-### Step 3: Run the `1_CREATE_USERS.ps1` Script  
-Use the premade script to create users in Active Directory. Below is the content of the script:
-
+### Step 3: Optimize and Execute the Script
+1. **Set Execution Policy**:  
+   Run the following command in PowerShell to allow the script to execute:  
+   ```powershell
+   Set-ExecutionPolicy Unrestricted
+2
